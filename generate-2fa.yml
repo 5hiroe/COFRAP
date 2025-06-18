@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+
+functions:
+  generate-2fa:
+    lang: node18
+    handler: ./generate-2fa
+    image: 5h1r03/generate-2fa:latest
+    environment:
+      MONGO_URI: "mongodb://myuser:mypassword@mongo-db-mongodb.mongo.svc.cluster.local:27017/mydatabase"
+      KEY_ENCRYPT: "nusx!#;Z$}XR_<jq*gDe+~9^LtWm%Gzc"
+
