@@ -1,2 +1,10 @@
 build/
 template/
+
+login/node_modules/
+generate-2fa/node_modules/
+generate-password/node_modules/
+mspr-frontend/node_modules/
+
+mongo-function/
+
